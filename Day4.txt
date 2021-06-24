@@ -1,0 +1,40 @@
+1)
+tuple1=(10,20,30,40)
+
+print(tuple1)
+
+tuple2=(100)
+
+print(tuple2)
+
+2)
+tuple1=(10,20,30,40)
+
+print(tuple1)
+
+tuple2=(44.4)
+
+print(type(tuple2))
+
+3)
+dict={'name':'Hema','age': 21,'profession':'employee'}
+dict['age']=22
+print(dict)
+
+4)
+d1={'name':'Hema','age': 21,'profession':'employee'}
+d1['age']=22
+print(d1)
+d2={'status':'single','work':'chennai'}
+d1.update(d2)
+print(d1)
+
+5)
+d1={'name':'Hema','age': 21,'profession':'employee'}
+d1['age']=22
+print(d1)
+d2={'status':'single','work':'chennai'}
+d1.update(d2)
+print(d1)
+d1.pop('status')
+print(d1)

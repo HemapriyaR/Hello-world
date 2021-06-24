@@ -1,0 +1,80 @@
+1)
+print(12/4)
+
+print(12//4)
+
+Output:
+3.0
+3
+
+2)
+a=11.1
+list1=[11.1,11.3,11.5,11.7]
+if a in list1:
+    print("found")
+else:
+    print("Not found")
+    
+if type(a) is int:
+    print("True")
+else:
+    print("False")
+
+Output:
+found
+False
+
+3)
+str="Hema"
+for char in str:
+    print(char)
+print(str[2])    
+
+Output:
+H
+e
+m
+a
+
+m
+
+4)
+str="Hemapriya"
+print(str[::-1])    
+print(str.upper())
+print(str.lower())
+print(str.find('b'))
+print(str.index('a'))
+print(str.count('l'))
+print(str.replace('a','c'))
+    
+Output:
+ayirpameH
+HEMAPRIYA
+hemapriya
+-1
+3
+0
+Hemcpriyc
+
+5)
+s1="one two three four five"
+words= s1.split()
+print(words)
+
+Output:
+['one', 'two', 'three', 'four', 'five']
+
+6)
+def encrypt():
+    String=input("Enter the name :")
+    even=String[::2]
+    odd=String[1::2]
+    print(even)
+    print(odd)
+encrypt()    
+
+Output:
+Enter the name :Message
+Msae
+esg

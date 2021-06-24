@@ -1,0 +1,84 @@
+1)
+list1=['a','b','c','d','e']
+print("The reference of list1 :",id(list1))
+print("The elements of list1",list1)
+list2=list1
+print("The reference of list2 :",id(list2))
+print("The elements of list2",list2)
+
+Output:
+The reference of list1 : 140236328730112
+The elements of list1 ['a', 'b', 'c', 'd', 'e']
+The reference of list2 : 140236328730112
+The elements of list2 ['a', 'b', 'c', 'd', 'e']
+
+2)
+list1=[10,20,30,40,50]
+print("The reference of list1 :",id(list1))
+print("The elements of list1 :",list1)
+print("The size of list1 :",len(list1))
+list1.append(70)
+print("The reference of list1 :",id(list1))
+print("The elements of list1 :",list1)
+print("The size of list1 :",len(list1))
+
+Output:
+The reference of list1 : 140610966584960
+The elements of list1 : [10, 20, 30, 40, 50]
+The size of list1 : 5
+The reference of list1 : 140610966584960
+The elements of list1 : [10, 20, 30, 40, 50, 70]
+The size of list1 : 6
+
+3)
+list1=[10,20,30,40,50]
+print("The reference of list1 :",id(list1))
+print("The elements of list1 :",list1)
+print("The size of list1 :",len(list1))
+list1.extend((60,70,80))
+print("The reference of list1 :",id(list1))
+print("The elements of list1 :",list1)
+print("The size of list1 :",len(list1))
+
+Output:
+The reference of list1 : 140545026121216
+The elements of list1 : [10, 20, 30, 40, 50]
+The size of list1 : 5
+The reference of list1 : 140545026121216
+The elements of list1 : [10, 20, 30, 40, 50, 60, 70, 80]
+The size of list1 : 8
+
+4)
+list1=[10,20,30,40,50]
+print("The reference of list1 :",id(list1))
+print("The elements of list1 :",list1)
+print("The size of list1 :",len(list1))
+list1.insert(3,30)
+print("The reference of list1 :",id(list1))
+print("The elements of list1 :",list1)
+print("The size of list1 :",len(list1))
+
+5)
+list1=[10,20,30,40,50]
+print("The reference of list1 :",id(list1))
+print("The elements of list1 :",list1)
+print("The size of list1 :",len(list1))
+element=list1.pop(2)
+print("The removed element is :",element)
+print("The reference of list1 :",id(list1))
+print("The elements of list1 :",list1)
+print("The size of list1 :",len(list1))
+
+6)
+list1=[10,14,22,11,33,56,12,9,29]
+print("Before sorting :",list1)
+list1.sort()
+print("After sorting :",list1);
+
+7)
+list1=[10,14,22,11,33,56,12,9,29]
+print("Before sorting :",list1)
+list1.sort(reverse=True)
+list2=sorted(list1,reverse=True)
+print("After sorting :",list1)
+print("After sorting :",list2)

@@ -1,0 +1,38 @@
+1)
+num=int(input("Enter the number :"))
+
+if num<0:
+    print("Negative")
+elif(num>0):
+    print("Positive")
+else:
+    print("Zero")
+
+2)
+for num in range(10):
+    if num==5:
+        break;
+    print(num)
+
+3)
+num=int(input("Enter the number :"))
+if num%2==0:
+    print("Even")
+elif num%2!=0:
+    print("odd")
+
+4)
+val=1;
+while(val<10):
+   val+=1
+   if val==6:
+      break
+   print(val)
+
+5)
+val=1;
+while(val<10):
+   val+=1
+   if val==6:
+      continue
+   print(val)
