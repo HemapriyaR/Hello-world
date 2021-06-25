@@ -1,0 +1,29 @@
+1)
+def f(a):
+    def g():
+        return a*a
+    return g
+g=f(10)
+print(g)
+print(g())
+
+2)
+def f(a):
+    def g(b):
+        return b*b
+    return a+g(a)
+g=f(10)
+print(g)
+
+3)
+fh=open('//home/HemapriyaRavi/Day 1','r')
+print(fh.name)
+print(fh.mode)
+print(fh.closed)
+fh.close()
+
+4)
+fh=open('//home/HemapriyaRavi/Day 1','r')
+print(fh.readlines())
+print(fh.readlines())
+fh.close()
